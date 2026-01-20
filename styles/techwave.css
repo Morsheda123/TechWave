@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
+
+
 /* Common styles section */
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -391,6 +394,64 @@
     height: 16px;
 }
 
+/* footer style */
+
+.tw-footer{
+    position: relative;
+    height: 340px;
+    background: #1A0B2E;
+    overflow: hidden;
+}
+
+/* wave background */
+.tw-footer-bg{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tw-footer-content{
+    position: relative;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    text-align: center;
+    color: #FFFF;
+}
+.footer-logo{
+    height: 60px;
+    width: 410px;
+}
+.tw-footer-platforms{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tw-platform{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFFF;
+}
+.tw-platform img{
+    width: 24px;
+}
+.tw-footer-copy{
+    font-size: 1rem;
+    color: #FFFF;
+}
 
 /* for responsive */
 @media screen and (max-width:576) {

@@ -288,7 +288,7 @@
 /* featured episode style */
 
 .featured-section{ 
-  padding: 120px 200px; 
+  padding: 120px 20px; 
   text-align: center; 
 } 
 .section-title{ 
@@ -325,6 +325,7 @@
   font-size: 1.5rem; 
   margin-bottom: 12px; 
 } 
+
 .episode-card p{ 
   font-size: 1rem; 
   margin-bottom: 10px; 

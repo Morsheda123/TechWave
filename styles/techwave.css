@@ -287,58 +287,58 @@
 
 /* featured episode style */
 
-.featured-section{
-    padding: 120px 200px;
-    text-align: center;
-}
-.section-title{
-    font-size: 3rem;
-    font-weight: 700;  
-}
-.featured-container{
-    max-width: 1200px;
-    margin: 60px auto 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-.episode-card{
-    background: #250D44;
-    border-radius: 20px;
-    padding: 24px 24px 145px 24px;
-    height: 440px;
-    width: 380px;
-    text-align: left;
-}
+.featured-section{ 
+  padding: 120px 200px; 
+  text-align: center; 
+} 
+.section-title{ 
+  font-size: 3rem; 
+  font-weight: 700; 
+} 
+.featured-container{ 
+  max-width: 1200px; 
+  margin: 60px auto 0; 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px; 
+} 
+.episode-card{ 
+  background: #250D44; 
+  border-radius: 20px; 
+  padding: 24px 24px 145px 24px; 
+  height: 440px; 
+  width: 380px; 
+  text-align: left; 
+} 
 .video-wrapper{
-    width: 100%;
-    height: 200px;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 24px;
-}
-.video-wrapper iframe{
-    width: 100%;
-    height: 100%;
-}
-.episode-card h3{
-    font-size: 1.5rem;
-    margin-bottom: 12px;
-}
-.episode-card p{
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-.episode-time{
-    font-size: 1rem;
-    color: #00FF88;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-.episode-time img{
-    width: 20px;
-}
+  width: 100%;
+  height: 200px;
+  border-radius: 20px; 
+  overflow: hidden; 
+  margin-bottom: 24px; 
+} 
+.video-wrapper iframe{ 
+  width: 100%; 
+  height: 100%; 
+} 
+.episode-card h3{ 
+  font-size: 1.5rem; 
+  margin-bottom: 12px; 
+} 
+.episode-card p{ 
+  font-size: 1rem; 
+  margin-bottom: 10px; 
+} 
+.episode-time{ 
+  font-size: 1rem; 
+  color: #00FF88; 
+  display: flex; 
+  align-items: center; 
+  gap: 6px; 
+} 
+.episode-time img{ 
+  width: 20px; 
+ }
 
 /* meet the host section style */
 
@@ -377,8 +377,6 @@
     margin-bottom: 14px;
 }
 
-/* HOST SOCIAL ICONS – FIXED */
-
 .host-social{
     display: flex;
     gap: 14px;
@@ -413,7 +411,6 @@
     overflow: hidden;
 }
 
-/* wave background */
 .tw-footer-bg{
     position: absolute;
     inset: 0;
@@ -464,25 +461,125 @@
 }
 
 /* for responsive */
-@media screen and (max-width:576) {
-  .navbar,
-  .nav-links{
-    flex-direction: column;
+@media screen and (max-width: 576px) {
+
+  .navbar {
+    padding: 20px;
   }
-  .why-container{
+
+  .nav-links {
+    display: none;
+  }
+
+  .btn-primary {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+
+  .nav-logo {
+    width: 150px;
+    height: auto;
+  }
+
+  .hero {
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .hero-icon {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 24px;
+  }
+
+  .hero-mic {
+    width: 70px;
+  }
+
+  .hero-badge-icon {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-section,
+  .featured-section,
+  .why-section{
+    padding: 60px 20px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    margin-bottom: 30px;
+  }
+
+  .about-info {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+  }
+
+  .info-item h3 {
+    font-size: 2.2rem;
+  }
+  .why-title {
+    font-size: 2rem;
+  }
+
+  .why-container {
     grid-template-areas:
-        "premium"
-         "mobile"
-         "global"
-         "exclusive"
-         "resources"
-  }
-  .why-container{
-    justify-items: center;
-    gap: 24px;
-    margin-right: 20px;
+      "premium"
+      "mobile"
+      "global"
+      "exclusive"
+      "resources";
   }
 
+  .why-card {
+    padding: 24px;
+  }
+   
 
+  .section-title {
+    font-size: 2rem;
+  }
+  .featured-container {
+    grid-template-columns: 1fr;
+  }
+
+  .episode-card {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .host-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .host-info {
+    text-align: center;
+  }
+
+  .host-social {
+    justify-content: center;
+  }
+  
+  .tw-footer-platforms {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+  }
 
 }

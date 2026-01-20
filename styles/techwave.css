@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-
-
 /* Common styles section */
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -274,6 +272,18 @@
     font-size: 1rem;
     font-weight: 400;
 }
+
+/* animation style part */
+.why-card {
+  transition: all 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(255,0,255,0.3);
+}
+
+
 
 /* featured episode style */
 
